@@ -27,8 +27,7 @@ const WritePage = () => {
   const [value, setValue] = useState("");
   const [media, setMedia] = useState("");
   const [title, setTitle] = useState("");
-  const [catSlug, setCatSlug] = useState(""); 
-
+  const [catSlug, setCatSlug] = useState("");
 
   useEffect(() => {
     const storage = getStorage(app);
@@ -105,7 +104,7 @@ const WritePage = () => {
         type="text"
         placeholder="Title"
         className={styles.input}
-        onChange={(e) => setTitle(e.target.value)} 
+        onChange={(e) => setTitle(e.target.value)}
       />
       <select
         className={styles.select}
